@@ -18,6 +18,9 @@
     Paso 1 - Instala NVM
     En primer lugar, debe instalar NVM en su sistema. Un script Bash está disponible para instalar nvm en su sistema. Use el siguiente comando para instalar NVM en su sistema Linux.
 
+    Realizar la instalacion dentro de carpeta personnal home del usuario ( No instalar como root )
+    Esta instalacion solo tiene alcance personal ( No global )
+
         $ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
     Vuelva a cargar el entorno del sistema con este comando. Establecerá las variables de entorno requeridas para usar nvm en el sistema.
@@ -55,7 +58,7 @@
     Paso 3: instalación de Node.js con NVM
     Ahora instale la versión de node.js que necesita usar para ejecutar la aplicación node.js. El siguiente comando instalará node.js 12.16.2 la versión LTS en su sistema.
 
-        $ nvm install v12.18.2
+        $ nvm install v12.18.3
 
     También puede haber instalado la última versión de Node.js.
 
@@ -71,8 +74,8 @@
 
         $  nvm list
 
-        ->     v12.18.2
-                v14.5.0
+        ->     v12.18.3
+                v14.7.0
                 system
         default -> 12 (-> v12.18.2)
         node -> stable (-> v14.5.0) (default)
@@ -89,7 +92,7 @@
 
     Puede ver que la versión v12.18.2 de Node.js está configurada como la versión predeterminada. Puede cambiar la versión predeterminada de Node.js. El siguiente comando establecerá 12.18.2 como la versión predeterminada de Node.js.
 
-        $ nvm use v12.18.2
+        $ nvm use v12.18.3
 
     Ahora verifique la versión activa actual de node.js
 
