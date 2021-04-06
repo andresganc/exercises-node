@@ -1,0 +1,43 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "build": "NODE_ENV=production cd public/assets && cleancss -o main.min.css main.css",
+    "dev": "nodemon index",
+    "dev:inspect": "nodemon --inspect index",
+    "dev:debug": "DEBUG=express:*,app:* npm run dev",
+    "debug": "DEBUG=express:*,app:* npm run start",
+    "test": "mocha --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "boom": "^7.2.2",
+    "debug": "^4.1.0",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "joi": "^14.1.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongodb": "^3.1.10",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-jwt": "^4.0.0",
+    "pug": "^3.0.1"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "clean-css-cli": "^4.2.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.6",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.1.1",
+    "supertest": "^3.3.0"
+  }
+}
