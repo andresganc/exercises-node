@@ -10,6 +10,8 @@ process.stdout.write('USE STDOUT NODEJS without jump line')
 // STDIN
 // En trada de datos por consola
 
+process.stdin.on('data', () => { nombre = data.toString().trim(); process.exit(); })
+
 let nombre;
 
 process.stdout.write('Cual es tu nombre: ')
