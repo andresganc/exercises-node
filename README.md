@@ -62,7 +62,7 @@
 
     También puede haber instalado la última versión de Node.js.
 
-        $ nvm install v14.7.0
+        $ nvm install v14.17.2
 
     Repita el comando anterior con las diferentes versiones de node.js para instalar varias versiones de node.js en su sistema.
 
